@@ -11,7 +11,7 @@
 ## end
 ##
 variables:
-  DUMMY_VAR
+  DUMMY_VAR:
     description: "dummy var"
     required: false
     type: string
