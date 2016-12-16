@@ -23,6 +23,6 @@ coreo_aws_advisor_alert "check-ec2-sizes" do
 end
 coreo_aws_advisor_ec2 "advise-ec2" do
   action :advise
-  regions ${AUDIT_AWS_EC2_REGIONS}
+  region "us-east-1"
   alerts ["check-ec2-sizes"]
 end
