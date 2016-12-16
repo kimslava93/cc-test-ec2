@@ -18,5 +18,5 @@ coreo_aws_advisor_alert "check-ec2-sizes" do
   level "medium"
   audit_objects ["snapshot_set.volume_size", "snapshot_set.encrypted"]
   operators [">", "=="]
-  alert_when [8, "=="]
+  alert_when [8, true]
 end
