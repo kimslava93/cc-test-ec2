@@ -14,7 +14,7 @@ coreo_aws_advisor_alert "check-ec2-sizes" do
   action :define
   service :ec2
   description "check if size is higher than 8GB"
-  objectives ["snapshots"]
+  objectives ["snapshots", "snapshots"]
   level "medium"
   audit_objects ["snapshot_set.volume_size", "snapshot_set.encrypted"]
   operators [">", "=="]
