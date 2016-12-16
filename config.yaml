@@ -16,4 +16,4 @@ variables:
     required: false
     type: string
     default:
-     -"nothing"
+     - "nothing"
